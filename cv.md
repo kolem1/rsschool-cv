@@ -78,5 +78,5 @@ function solution(num) {
 ## Language
 
 Russian - Native Speaker\
-English - A2\
+English - B1\
 German - A1
