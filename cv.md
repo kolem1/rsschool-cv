@@ -69,3 +69,8 @@ function solution(num) {
     * HTML, CSS
     * JavaScript
 
+## Education
+
+* Institute of Oil and Gas
+    * Oil and Gas Engineering
+
