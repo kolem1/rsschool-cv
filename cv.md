@@ -19,6 +19,7 @@ I am 22 years old and have just graduated from the Oil and Gas Institute. But al
 * BEM
 * JavaScript
 * PHP
+* Wordpress
 * Git/GitHub
 * Gulp
 * Figma
