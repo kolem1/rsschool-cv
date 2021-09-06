@@ -46,4 +46,26 @@ function solution(num) {
 }
 ```
 
+## Work experience
+
+**Freelance experience:**
+1. [LSTKPromStroy](https://lstkpromstroy.ru/) - Website for the construction company \
+    Stack:
+    * HTML, CSS
+    * JavaScript
+    * Wordpress 
+2. [ClassikDent](https://classikdent.ru/) - Dentistry website \
+    Stack:
+    * HTML, CSS
+    * JavaScript
+    * Wordpress
+3. [CKI](http://polzunova.vtkteam.ru/) - Site for a cultural center \
+    Stack:
+    * HTML, CSS
+    * JavaScript
+    * Wordpress
+4. [AVTK](http://tensib.beget.tech/avtk/) - Online Store \
+    Stack
+    * HTML, CSS
+    * JavaScript
 
