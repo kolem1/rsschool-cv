@@ -24,3 +24,26 @@ I am 22 years old and have just graduated from the Oil and Gas Institute. But al
 * Figma
 * Photoshop
 
+## Code Example
+
+**Roman Numerals Encoder Kata from Codewars:**
+
+Create a function taking a positive integer as its parameter and returning a string containing the Roman Numeral representation of that integer.
+
+**Solution:**
+
+```javascript
+function solution(num) {
+  let lookup = {M:1000,CM:900,D:500,CD:400,C:100,XC:90,L:50,XL:40,X:10,IX:9,V:5,IV:4,I:1},
+    result = '';
+  for (let i in lookup ) {
+    while ( num >= lookup[i] ) {
+      result += i;
+      num -= lookup[i];
+    }
+  }
+  return result;
+}
+```
+
+
