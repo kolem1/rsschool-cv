@@ -75,3 +75,8 @@ function solution(num) {
 * Institute of Oil and Gas
     * Oil and Gas Engineering
 
+## Language
+
+Russian - Native Speaker\
+English - A2\
+German - A1
