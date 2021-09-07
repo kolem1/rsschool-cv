@@ -10,48 +10,64 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <div class="header__item header__logo-wrapper">
-          <div class="logo">
-            <img class="logo__img" src="img/photo.jpg" alt="">
-            <span class="logo__text">Lemko K.</span>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__item header__logo-wrapper">
+            <div class="logo">
+              <img class="logo__img" src="img/photo.jpg" alt="">
+              <span class="logo__text">Lemko K.</span>
+            </div>
+          </div>
+          <nav class="header__item header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#home">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#about">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#skills">Skills</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#code-example">Code example</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#projects">Projects</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#education">Education</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#language">Language</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="home" id="home">
+        <div class="container">
+          <div class="home__inner">
+            <div class="home__info home-info">
+              <p class="home-info__text">Hello, I am</p>
+              <h1 class="home-info__title">Konstantin Lemko</h1>
+              <h2 class="home-info__profession">Frontend Developer</h2>
+            </div>
           </div>
         </div>
-        <nav class="header__item header__menu menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="#">Home</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">About</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Skills</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Code example</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Projects</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Education</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Language</a>
-            </li>
-          </ul>
-        </nav>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__copy">&copy; 2021 Konstantin Lemko</div>
+        </div>
       </div>
-    </div>
-  </header>
-  <main class="main">
-
-  </main>
-  <footer class="footer">
-
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>
