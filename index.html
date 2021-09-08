@@ -6,6 +6,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+  href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -92,6 +94,52 @@
           </div>
         </div>
       </section>
+      <section class="section section--even" id="skills">
+        <div class="container">
+          <div class="section__inner">
+            <h2 class="section__title">Skills</h2>
+            <div class="section__body">
+              <ul class="skills-list">
+                <li class="skills-list__item skills-list__item--html">HTML5</li>
+                <li class="skills-list__item skills-list__item--css">CSS</li>
+                <li class="skills-list__item skills-list__item--js">JavaScript</li>
+                <li class="skills-list__item skills-list__item--php">PHP</li>
+                <li class="skills-list__item skills-list__item--wordpress">Wordpress</li>
+                <li class="skills-list__item skills-list__item--git">Git</li>
+                <li class="skills-list__item skills-list__item--gulp">Gulp</li>
+                <li class="skills-list__item skills-list__item--figma">Figma</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="code-example">
+        <div class="container">
+          <div class="section__inner">
+            <h2 class="section__title">Code Example</h2>
+            <div class="section__body">
+              <h3>Roman Numerals Encoder Kata from Codewars:</h3>
+              <p>Create a function taking a positive integer as its parameter and returning a string containing the Roman Numeral representation of that integer.</p>
+              <h3>Solution:</h3>
+              <pre>
+                <code class="JavaScript">
+function solution(num) {
+  let lookup = {M:1000,CM:900,D:500,CD:400,C:100,XC:90,L:50,XL:40,X:10,IX:9,V:5,IV:4,I:1},
+    result = '';
+  for (let i in lookup ) {
+    while ( num >= lookup[i] ) {
+      result += i;
+      num -= lookup[i];
+    }
+  }
+  return result;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
@@ -101,5 +149,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

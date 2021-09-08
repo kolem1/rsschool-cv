@@ -141,7 +141,11 @@ img {
 }
 
 .section {
-  margin: 30px 0;
+  padding: 30px 0;
+}
+
+.section--even {
+  background-color: #f9f9f9;
 }
 
 .section__inner {
@@ -176,6 +180,78 @@ img {
 .contacts__description {
   display: inline;
   margin: 0;
+}
+
+.skills-list {
+  margin: 0;
+  padding: 0;
+
+  font-size: 20px;
+
+  list-style: none;
+}
+
+.skills-list__item {
+  display: flex;
+  align-items: center;
+}
+
+.skills-list__item::before {
+  content: "";
+  
+  display: inline-block;
+  margin-right: 5px;
+
+  width: 40px;
+  min-height: 40px;
+
+  background-position: center;
+  background-size: 35px auto;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+
+  transition: all 0.4s;
+}
+
+.skills-list__item--html::before {
+  background-image: url("../img/html.svg");
+}
+
+.skills-list__item--css::before {
+  background-image: url("../img/css.svg");
+}
+
+.skills-list__item--js::before {
+  background-image: url("../img/js.svg");
+}
+
+.skills-list__item--php::before {
+  background-image: url("../img/php.svg");
+  background-size: 30px; 
+}
+
+.skills-list__item--wordpress::before {
+  background-image: url("../img/wordpress.svg");
+  background-size: 30px;
+}
+
+.skills-list__item--git::before {
+  background-image: url("../img/git.svg");
+}
+
+.skills-list__item--gulp::before {
+  background-image: url("../img/gulp.svg");
+  background-size: 30px auto;
+  border-radius: 50%;
+}
+
+.skills-list__item--figma::before {
+  background-image: url("../img/figma.svg");
+}
+
+.skills-list__item:hover::before {
+  filter: grayscale(0);
+  transform: rotate(360deg);
 }
 
 .footer {
