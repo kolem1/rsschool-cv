@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #2d3038;
@@ -135,8 +135,47 @@ img {
 
 .home-info__profession {
   margin: 0;
+
   text-transform: uppercase;
   letter-spacing: 20px;
+}
+
+.section {
+  margin: 30px 0;
+}
+
+.section__inner {
+  display: flex;
+}
+
+.section__title {
+  margin-top: 0;
+  width: calc(100% / 3);
+
+  font-size: 50px;
+}
+
+.section__body {
+  width: calc(100% * 2 / 3);
+}
+
+.contacts {
+  font-size: 18px;
+}
+
+.contacts > div {
+  margin-bottom: 15px;
+}
+
+.contacts__title {
+  display: inline;
+
+  font-weight: 700;
+}
+
+.contacts__description {
+  display: inline;
+  margin: 0;
 }
 
 .footer {
