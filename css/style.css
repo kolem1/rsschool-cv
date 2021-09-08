@@ -21,8 +21,21 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
+
   object-fit: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
 }
 
 .container {
@@ -252,6 +265,78 @@ img {
 .skills-list__item:hover::before {
   filter: grayscale(0);
   transform: rotate(360deg);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.project {
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+
+  overflow: hidden;
+}
+
+.project__inner {
+  position: relative;
+  width: 100%;
+}
+
+.project__hidden-part {
+  width: 100%;
+  height: 100%;
+}
+
+.project__img {
+  width: 100%;
+  height: 250px;
+}
+
+.project__hidden-part {
+  position: absolute;
+  top: 100%;
+
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+
+  color: #ffffff;
+  text-align: left;
+
+  
+  background-color: rgba(0, 0, 0, 0.6);
+
+  transition: top 0.4s;
+}
+
+.project:hover .project__hidden-part {
+  top: 0;
+}
+
+.project__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.project__title::before {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.project__description {
+  margin: 0;
 }
 
 .footer {
