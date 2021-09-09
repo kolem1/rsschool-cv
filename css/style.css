@@ -382,6 +382,52 @@ img {
   font-weight: 700;
 }
 
+.languages-list {
+  display: flex;
+  padding: 0;
+  margin: 0 -10px;
+
+  text-align: center;
+
+  list-style: none;
+}
+
+.languages-list__item {
+  width: 25%;
+  padding: 0 10px;
+}
+
+.language__level {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+
+  border-radius: 50%;
+}
+
+.language:nth-child(1n) .language__level {
+  background-color: #b90162;
+}
+
+.language:nth-child(2n) .language__level {
+  background-color: #873e95;
+}
+
+.language:nth-child(3n) .language__level {
+  background-color: #3c70b4;
+}
+
+.language:nth-child(4n) .language__level {
+  background-color: #05ac80;
+}
+
 .footer {
   margin-top: auto;
   padding: 15px 0;
