@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Konstantin Lemko - CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+  href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__item header__logo-wrapper">
+            <div class="logo">
+              <img class="logo__img" src="img/photo.jpg" alt="">
+              <span class="logo__text">Lemko K.</span>
+            </div>
+          </div>
+          <nav class="header__item header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#home">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#about">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#skills">Skills</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#code-example">Code example</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#projects">Projects</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#education">Education</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#languages">Languages</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="home" id="home">
+        <div class="container">
+          <div class="home__inner">
+            <div class="home__info home-info">
+              <h1 class="home-info__title">Konstantin Lemko</h1>
+              <h2 class="home-info__profession">Frontend Developer</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section__inner">
+            <h2 class="section__title">About Me</h2>
+            <div class="section__body">
+              <p class="section__text">I am 22 years old and have just graduated from the Oil and Gas Institute. But already at the end of the 3rd year, I realized that I would not work in this specialty, since I did not like it. It was then that I got involved in web programming and continue to this day. This is really very interesting and I want to develop in the direction of front-end development.</p>
+              <dl class="section__contacts contacts">
+                <div>
+                  <dt class="contacts__title">Name:</dt>
+                  <dd class="contacts__description">Lemko Konstantin</dd>
+                </div>
+                <div>
+                  <dt class="contacts__title">E-mail:</dt>
+                  <dd class="contacts__description"><a href="mailto:lemko99@bk.ru">lemko99@bk.ru</a></dd>
+                </div>
+                <div>
+                  <dt class="contacts__title">Phone:</dt>
+                  <dd class="contacts__description"><a href="tel:+79135546353">+7 (913) 554-63-53</a></dd>
+                </div>
+                <div>
+                  <dt class="contacts__title">Telegram:</dt>
+                  <dd class="contacts__description"><a href="https://t.me/kolem1212">@kolem1212</a></dd>
+                </div>
+                <div>
+                  <dt class="contacts__title">Date of Birth:</dt>
+                  <dd class="contacts__description">February 27, 1999</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--even" id="skills">
+        <div class="container">
+          <div class="section__inner">
+            <h2 class="section__title">Skills</h2>
+            <div class="section__body">
+              <ul class="skills-list">
+                <li class="skills-list__item skills-list__item--html">HTML5</li>
+                <li class="skills-list__item skills-list__item--css">CSS</li>
+                <li class="skills-list__item skills-list__item--js">JavaScript</li>
+                <li class="skills-list__item skills-list__item--php">PHP</li>
+                <li class="skills-list__item skills-list__item--wordpress">Wordpress</li>
+                <li class="skills-list__item skills-list__item--git">Git</li>
+                <li class="skills-list__item skills-list__item--gulp">Gulp</li>
+                <li class="skills-list__item skills-list__item--figma">Figma</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="code-example">
+        <div class="container">
+          <div class="section__inner">
+            <h2 class="section__title">Code Example</h2>
+            <div class="section__body">
+              <h3>Roman Numerals Encoder Kata from Codewars:</h3>
+              <p>Create a function taking a positive integer as its parameter and returning a string containing the Roman Numeral representation of that integer.</p>
+              <h3>Solution:</h3>
+              <pre>
+                <code class="JavaScript">
+function solution(num) {
+  let lookup = {M:1000,CM:900,D:500,CD:400,C:100,XC:90,L:50,XL:40,X:10,IX:9,V:5,IV:4,I:1},
+    result = '';
+  for (let i in lookup ) {
+    while ( num &gt;= lookup[i] ) {
+      result += i;
+      num -= lookup[i];
+    }
+  }
+  return result;
+}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--even" id="projects">
+        <div class="container">
+          <div class="section__inner">
+            <h2 class="section__title">Projects</h2>
+            <div class="section__body">
+              <div class="projects-grid">
+                <article class="projects-grid__item project">
+                  <div class="project__inner">
+                    <div class="project__img-wrapper">
+                      <img class="project__img" src="img/lstk.png" alt="">
+                    </div>
+                    <div class="project__hidden-part">
+                      <div class="project__body">
+                        <h3><a class="project__title" href="https://lstkpromstroy.ru" target="_blank" title="LSKTPromStroy">LSKTPromStroy</a></h3>
+                        <p class="project__description">Website for the construction company on Wordpress</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="projects-grid__item project">
+                  <div class="project__inner">
+                    <div class="project__img-wrapper">
+                      <img class="project__img" src="img/classikdent.png" alt="">
+                    </div>
+                    <div class="project__hidden-part">
+                      <div class="project__body">
+                        <h3><a class="project__title" href="https://classikdent.ru" target="_blank" title="ClassikDent">ClassikDent</a></h3>
+                        <p class="project__description">Dentistry website on Wordpress</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="projects-grid__item project">
+                  <div class="project__inner">
+                    <div class="project__img-wrapper">
+                      <img class="project__img" src="img/cki.png" alt="">
+                    </div>
+                    <div class="project__hidden-part">
+                      <div class="project__body">
+                        <h3><a class="project__title" href="http://polzunova.vtkteam.ru/" target="_blank" title="CKI">CKI</a></h3>
+                        <p class="project__description">Site for a cultural center on Wordpress</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="projects-grid__item project">
+                  <div class="project__inner">
+                    <div class="project__img-wrapper">
+                      <img class="project__img" src="img/avtk.png" alt="">
+                    </div>
+                    <div class="project__hidden-part">
+                      <div class="project__body">
+                        <h3><a class="project__title" href="http://tensib.beget.tech/avtk/" target="_blank" title="AVTK">AVTK</a></h3>
+                        <p class="project__description">Online Store Layout</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section__inner">
+            <h2 class="section__title">Education</h2>
+            <div class="section__body">
+              <ul class="education-list">
+                <li class="education-list__item education-item">
+                  <img class="education-item__logo" src="img/logo_sfu.svg" alt="">
+                  <h3 class="education-item__title">Siberian Federal University</h3>
+                  <h4 class="education-item__subtitle">Institute of Oil and Gas</h4>
+                  <p class="education-item__profession">Oil and Gas Engineering</p>
+                  <p class="education-item__years">2016 - 2021</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--even" id="languages">
+        <div class="container">
+          <div class="section__inner">
+            <h2 class="section__title">Languages</h2>
+            <div class="section__body">
+              <ul class="languages-list">
+                <li class="languages-list__item language">
+                  <div class="language__level">Native</div>
+                  <h3 class="language__title">Russian</h3>
+                </li>
+                <li class="languages-list__item language">
+                  <div class="language__level">B1</div>
+                  <h3 class="language__title">English</h3>
+                </li>
+                <li class="languages-list__item language">
+                  <div class="language__level">A1</div>
+                  <h3 class="language__title">German</h3>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__copy">&copy; 2021 Konstantin Lemko</div>
+          <div class="footer__icons">
+            <a class="footer__icon" href="https://github.com/kolem1/">
+              <img class="footer__github-icon" src="img/GitHub_Logo.png" alt="" title="My GitHub"><span class="visually-hidden">My GitHub</span>
+            </a>
+            <a class="footer__icon" href="https://github.com/kolem1/">
+              <img class="footer__rsschool" src="img/rs_school_js.svg" alt="" title="My GitHub"><span class="visually-hidden">My GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
