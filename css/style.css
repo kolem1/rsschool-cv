@@ -158,7 +158,7 @@ img {
 }
 
 .section--even {
-  background-color: #f9f9f9;
+  background-color: #f0f0f0;
 }
 
 .section__inner {
@@ -196,6 +196,9 @@ img {
 }
 
 .skills-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
 
