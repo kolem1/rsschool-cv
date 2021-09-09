@@ -436,3 +436,40 @@ img {
 
   background-color: #2d3038;
 }
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__icons {
+  display: flex;
+  align-items: center;
+  margin: 0 -10px;
+}
+
+.footer__icon {
+  padding: 0 10px;
+}
+
+.footer__icon:hover .footer__github-icon {
+  filter: contrast(0.4);
+}
+
+.footer__icon:hover .footer__rsschool {
+  filter: invert(1) contrast(0.4);
+}
+
+.footer__github-icon {
+  height: 40px;
+  transition: filter 0.3s;
+}
+
+.footer__rsschool {
+  width: 100px;
+
+  filter: invert(1);
+
+  transition: filter 0.3s;
+}
