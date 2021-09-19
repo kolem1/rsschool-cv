@@ -71,6 +71,21 @@ img {
   padding: 0 10px;
 }
 
+.header__overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+
+  display: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header__overlay.active {
+  display: block;
+}
+
 .header__burger {
   display: none;
 }
@@ -592,14 +607,19 @@ img {
     top: 100%;
     right: 0;
 
-    display: none;
     width: 100%;
     max-width: 500px;
     padding: 0;
+
+    transform: translate(100%);
+    visibility: hidden;
+
+    transition: all 0.3s;
   }
 
   .header__menu.active {
-    display: block;
+    transform: translate(0);
+    visibility: visible;
   }
 
   .menu__list {
