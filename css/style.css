@@ -483,6 +483,7 @@ img {
   display: flex;
   padding: 0;
   margin: 0 -10px;
+  flex-wrap: wrap;
 
   text-align: center;
 
@@ -747,10 +748,27 @@ img {
   .project__inner {
     flex-wrap: wrap;
   }
+
+  .languages-list__item {
+    width: calc(100% / 3);
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__copy {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 450px) {
   .skills-list {
     grid-template-columns: 1fr;
+  }
+
+  .languages-list__item {
+    width: calc(100% / 2);
   }
 }
