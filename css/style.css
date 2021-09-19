@@ -51,8 +51,14 @@ img {
 }
 
 .header {
-  background: #2d3038;
+  position: fixed;
+  z-index: 10;
+
+  width: 100%;
+
   color: #fff;
+
+  background: #2d3038;
 }
 
 .header__inner {
@@ -63,6 +69,68 @@ img {
 
 .header__item {
   padding: 0 10px;
+}
+
+.header__burger {
+  display: none;
+}
+
+.burger {
+  position: relative;
+
+  width: 25px;
+  height: 25px;
+
+  background-color: transparent;
+  border: none;
+}
+
+.burger::before,
+.burger::after {
+  content: '';
+}
+
+.burger::before,
+.burger::after,
+.burger__line {
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #fff;
+
+  transition: all 0.3s;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+.burger__line {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger.active .burger__line {
+  opacity: 0;
+}
+
+.burger.active::before {
+  top: 50%;
+
+  transform: rotate(45deg);
+}
+
+.burger.active::after {
+  bottom: 42%;
+
+  transform: rotate(-45deg);
 }
 
 .logo {
@@ -81,6 +149,8 @@ img {
   margin-right: 10px;
 
   border-radius: 50%;
+
+  object-position: -40px;
 }
 
 .logo__text {
@@ -125,10 +195,20 @@ img {
   transform: scale(1.1) perspective(10px);
 }
 
+.home {
+  padding-top: 78px;
+
+  background-color: #f0f0f0;
+}
+
 .home__inner {
-  min-height: calc(100vh - 78px);
+  min-height: 650px;
   display: flex;
   align-items: center;
+
+  background-size: auto 650px;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .home-info__text {
@@ -475,4 +555,56 @@ img {
   filter: invert(1);
 
   transition: filter 0.3s;
+}
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    font-size: 35px;
+  }
+
+  .logo__img {
+    width: 40px;
+    height: 40px;
+
+    object-position: -27px;
+  }
+
+  .logo__text {
+    margin-top: 6px;
+  }
+
+  .menu__link {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__inner {
+    align-items: center;
+  }
+
+  .header__burger {
+    display: block;
+  }
+
+  .header__menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    display: none;
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+  }
+
+  .menu__list {
+    display: block;
+    width: 100%;
+  }
+
+  .menu__link {
+    width: 100%;
+    padding: 20px;
+  }
 }
