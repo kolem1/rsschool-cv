@@ -598,6 +598,10 @@ img {
     padding: 0;
   }
 
+  .header__menu.active {
+    display: block;
+  }
+
   .menu__list {
     display: block;
     width: 100%;
