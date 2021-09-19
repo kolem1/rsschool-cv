@@ -221,31 +221,30 @@ img {
   display: flex;
   align-items: center;
 
+  background-image: url('../img/avatar_wb_phone_2.jpg');
   background-size: auto 650px;
   background-position: right;
   background-repeat: no-repeat;
 }
 
-.home-info__text {
-  margin: 0;
-
-  font-family: "Sacramento", cursive;
-  font-size: 60px;
-  font-weight: 700;
+.home-info {
+  font-size: 24px;
+  line-height: 1;
 }
 
 .home-info__title {
   margin: 0;
   margin-bottom: 10px;
 
-  font-size: 90px;
+  font-size: 3.7em;
 }
 
 .home-info__profession {
   margin: 0;
 
-  text-transform: uppercase;
+  font-size: 1em;
   letter-spacing: 20px;
+  text-transform: uppercase;
 }
 
 .section {
@@ -572,6 +571,12 @@ img {
   transition: filter 0.3s;
 }
 
+@media screen and (max-width: 1368px) {
+  .home-info {
+    max-width: 700px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .logo {
     font-size: 35px;
@@ -591,6 +596,24 @@ img {
   .menu__link {
     padding: 0 10px;
   }
+
+  .home {
+    padding-top: 66px;
+  }
+  
+  .home__inner {
+    min-height: 450px;
+
+    background-size: auto 450px;
+  }
+
+  .home-info {
+    font-size: 20px;
+  }
+
+  .home-info__profession {
+    letter-spacing: 10px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -605,20 +628,25 @@ img {
   .header__menu {
     position: absolute;
     top: 100%;
-    right: 0;
+    right: -100%;
 
     width: 100%;
     max-width: 500px;
     padding: 0;
 
-    transform: translate(100%);
+    /* transform: translate(100%); */
     visibility: hidden;
 
-    transition: all 0.3s;
+    transition: right 0.3s;
   }
 
   .header__menu.active {
-    transform: translate(0);
+    left: auto;
+    right: 0;
+
+    height: auto;
+
+    /* transform: translate(0); */
     visibility: visible;
   }
 
@@ -630,5 +658,42 @@ img {
   .menu__link {
     width: 100%;
     padding: 20px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .home__inner {
+    background-position: right -70px top;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .home-info {
+    max-width: 400px;
+
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .home__inner {
+    background-image: url('../img/avatar_wb_650px.jpg');
+    background-size: auto 330px;
+    background-position: center bottom;
+  }
+
+  .home-info {
+    align-self: flex-start;
+    padding: 20px;
+
+    font-size: 14px;
+  }
+
+  .home-info__title {
+    font-size: 3em;
+  }
+
+  .home-info__profession {
+    letter-spacing: 5px;
   }
 }
