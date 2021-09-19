@@ -48,7 +48,7 @@ img {
 
 .header {
   position: fixed;
-  z-index: 10;
+  z-index: 100;
 
   width: 100%;
 
@@ -619,6 +619,7 @@ img {
 @media screen and (max-width: 1024px) {
   .header__inner {
     align-items: center;
+    margin: 0;
   }
 
   .header__burger {
@@ -710,6 +711,10 @@ img {
     max-width: 400px;
 
     font-size: 16px;
+  }
+
+  .container {
+    padding: 0 10px;
   }
 }
 
