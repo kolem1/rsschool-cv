@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
@@ -82,7 +78,7 @@ img {
   height: 100vh;
 }
 
-.header__overlay.active {
+.header.active .header__overlay {
   display: block;
 }
 
@@ -132,17 +128,17 @@ img {
   transform: translateY(-50%);
 }
 
-.burger.active .burger__line {
+.header.active .burger__line {
   opacity: 0;
 }
 
-.burger.active::before {
+.header.active .burger::before {
   top: 50%;
 
   transform: rotate(45deg);
 }
 
-.burger.active::after {
+.header.active .burger::after {
   bottom: 42%;
 
   transform: rotate(-45deg);
@@ -318,9 +314,8 @@ img {
   background-position: center;
   background-size: 35px auto;
   background-repeat: no-repeat;
-  filter: grayscale(1);
 
-  transition: all 0.4s;
+  transition: transform 0.4s;
 }
 
 .skills-list__item--html::before {
@@ -360,7 +355,6 @@ img {
 }
 
 .skills-list__item:hover::before {
-  filter: grayscale(0);
   transform: rotate(360deg);
 }
 
@@ -634,19 +628,17 @@ img {
     max-width: 500px;
     padding: 0;
 
-    /* transform: translate(100%); */
     visibility: hidden;
 
     transition: right 0.3s;
   }
 
-  .header__menu.active {
+  .header.active .header__menu {
     left: auto;
     right: 0;
 
     height: auto;
 
-    /* transform: translate(0); */
     visibility: visible;
   }
 
@@ -664,6 +656,15 @@ img {
 @media screen and (max-width: 920px) {
   .home__inner {
     background-position: right -70px top;
+  }
+
+  .section__inner {
+    display: block;
+  }
+
+  .section__title,
+  .section__body {
+    width: 100%;
   }
 }
 
@@ -695,5 +696,9 @@ img {
 
   .home-info__profession {
     letter-spacing: 5px;
+  }
+
+  .section__title {
+    font-size: 36px;
   }
 }
