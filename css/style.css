@@ -666,6 +666,11 @@ img {
   .section__body {
     width: 100%;
   }
+
+  .skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -700,5 +705,11 @@ img {
 
   .section__title {
     font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .skills-list {
+    grid-template-columns: 1fr;
   }
 }
