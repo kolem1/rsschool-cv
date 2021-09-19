@@ -160,8 +160,6 @@ img {
   margin-right: 10px;
 
   border-radius: 50%;
-
-  object-position: -40px;
 }
 
 .logo__text {
@@ -200,13 +198,60 @@ img {
 }
 
 .menu__link:hover,
-.menu__link:focus {
+.menu__link:focus,
+.menu__link.active {
   z-index: 10;
-  background-color: #873e95;
   transform: scale(1.1) perspective(10px);
 }
 
+.menu__item:nth-child(1n) .menu__link:hover,
+.menu__item:nth-child(1n) .menu__link:focus,
+.menu__item:nth-child(1n) .menu__link.active {
+  background-color: #b52d2d;
+}
+
+.menu__item:nth-child(2n) .menu__link:hover,
+.menu__item:nth-child(2n) .menu__link:focus,
+.menu__item:nth-child(2n) .menu__link.active {
+  background-color: #b5712d;
+}
+
+.menu__item:nth-child(3n) .menu__link:hover,
+.menu__item:nth-child(3n) .menu__link:focus,
+.menu__item:nth-child(3n) .menu__link.active {
+  background-color: #b5af2d;
+}
+
+.menu__item:nth-child(4n) .menu__link:hover,
+.menu__item:nth-child(4n) .menu__link:focus,
+.menu__item:nth-child(4n) .menu__link.active {
+  background-color: #3e943e;
+}
+
+.menu__item:nth-child(5n) .menu__link:hover,
+.menu__item:nth-child(5n) .menu__link:focus,
+.menu__item:nth-child(5n) .menu__link.active {
+  background-color: #3e9494;
+}
+
+.menu__item:nth-child(6n) .menu__link:hover,
+.menu__item:nth-child(6n) .menu__link:focus,
+.menu__item:nth-child(6n) .menu__link.active {
+  background-color: #3e3e94;
+}
+
+.menu__item:nth-child(7n) .menu__link:hover,
+.menu__item:nth-child(7n) .menu__link:focus,
+.menu__item:nth-child(7n) .menu__link.active {
+  background-color: #693e94;
+}
+
+.section {
+  padding: 30px 0;
+}
+
 .home {
+  padding: 0;
   padding-top: 78px;
 
   background-color: #f0f0f0;
@@ -217,7 +262,7 @@ img {
   display: flex;
   align-items: center;
 
-  background-image: url('../img/avatar_wb_phone_2.jpg');
+  background-image: url('../img/avatar_wb.jpg');
   background-size: auto 650px;
   background-position: right;
   background-repeat: no-repeat;
@@ -241,10 +286,6 @@ img {
   font-size: 1em;
   letter-spacing: 20px;
   text-transform: uppercase;
-}
-
-.section {
-  padding: 30px 0;
 }
 
 .section--even {
@@ -586,8 +627,6 @@ img {
   .logo__img {
     width: 40px;
     height: 40px;
-
-    object-position: -27px;
   }
 
   .logo__text {
@@ -721,7 +760,6 @@ img {
 
 @media screen and (max-width: 650px) {
   .home__inner {
-    background-image: url('../img/avatar_wb_650px.jpg');
     background-size: auto 330px;
     background-position: center bottom;
   }
