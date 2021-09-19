@@ -200,7 +200,8 @@ img {
 }
 
 .menu__link:hover,
-.menu__link:focus {
+.menu__link:focus,
+.menu__link.active {
   z-index: 10;
   background-color: #873e95;
   transform: scale(1.1) perspective(10px);

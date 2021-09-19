@@ -30,3 +30,23 @@ anchors.forEach(anchor => {
     anchor.blur();
   })
 })
+
+const sections = document.querySelectorAll('.section');
+const sectionsCoord = {};
+
+sections.forEach(item => {
+  sectionsCoord[item.id] = item.offsetTop;
+});
+
+window.onscroll = function() {
+  const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+  for(let section in sectionsCoord) {
+    if(sectionsCoord[section] <= scrollPosition + 80) {
+      document.querySelector('a[href^="#"].active').classList.remove('active');
+      document.querySelector('a[href*=' + section + ']').classList.add('active');
+    }
+  }
+}
+
+console.log(sectionsCoord)
