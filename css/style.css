@@ -160,8 +160,6 @@ img {
   margin-right: 10px;
 
   border-radius: 50%;
-
-  object-position: -40px;
 }
 
 .logo__text {
@@ -248,7 +246,12 @@ img {
   background-color: #693e94;
 }
 
+.section {
+  padding: 30px 0;
+}
+
 .home {
+  padding: 0;
   padding-top: 78px;
 
   background-color: #f0f0f0;
@@ -259,7 +262,7 @@ img {
   display: flex;
   align-items: center;
 
-  background-image: url('../img/avatar_wb_phone_2.jpg');
+  background-image: url('../img/avatar_wb.jpg');
   background-size: auto 650px;
   background-position: right;
   background-repeat: no-repeat;
@@ -283,10 +286,6 @@ img {
   font-size: 1em;
   letter-spacing: 20px;
   text-transform: uppercase;
-}
-
-.section {
-  padding: 30px 0;
 }
 
 .section--even {
@@ -763,7 +762,6 @@ img {
 
 @media screen and (max-width: 650px) {
   .home__inner {
-    background-image: url('../img/avatar_wb_650px.jpg');
     background-size: auto 330px;
     background-position: center bottom;
   }
