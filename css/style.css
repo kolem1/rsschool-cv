@@ -203,8 +203,49 @@ img {
 .menu__link:focus,
 .menu__link.active {
   z-index: 10;
-  background-color: #873e95;
   transform: scale(1.1) perspective(10px);
+}
+
+.menu__item:nth-child(1n) .menu__link:hover,
+.menu__item:nth-child(1n) .menu__link:focus,
+.menu__item:nth-child(1n) .menu__link.active {
+  background-color: #b52d2d;
+}
+
+.menu__item:nth-child(2n) .menu__link:hover,
+.menu__item:nth-child(2n) .menu__link:focus,
+.menu__item:nth-child(2n) .menu__link.active {
+  background-color: #b5712d;
+}
+
+.menu__item:nth-child(3n) .menu__link:hover,
+.menu__item:nth-child(3n) .menu__link:focus,
+.menu__item:nth-child(3n) .menu__link.active {
+  background-color: #b5af2d;
+}
+
+.menu__item:nth-child(4n) .menu__link:hover,
+.menu__item:nth-child(4n) .menu__link:focus,
+.menu__item:nth-child(4n) .menu__link.active {
+  background-color: #3e943e;
+}
+
+.menu__item:nth-child(5n) .menu__link:hover,
+.menu__item:nth-child(5n) .menu__link:focus,
+.menu__item:nth-child(5n) .menu__link.active {
+  background-color: #3e9494;
+}
+
+.menu__item:nth-child(6n) .menu__link:hover,
+.menu__item:nth-child(6n) .menu__link:focus,
+.menu__item:nth-child(6n) .menu__link.active {
+  background-color: #3e3e94;
+}
+
+.menu__item:nth-child(7n) .menu__link:hover,
+.menu__item:nth-child(7n) .menu__link:focus,
+.menu__item:nth-child(7n) .menu__link.active {
+  background-color: #693e94;
 }
 
 .home {
