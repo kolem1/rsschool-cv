@@ -627,8 +627,6 @@ img {
   .logo__img {
     width: 40px;
     height: 40px;
-
-    object-position: -27px;
   }
 
   .logo__text {
