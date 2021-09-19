@@ -18,10 +18,15 @@
         <div class="header__inner">
           <div class="header__item header__logo-wrapper">
             <div class="logo">
-              <img class="logo__img" src="img/photo.jpg" alt="">
+              <img class="logo__img" src="img/avatar.jpg" alt="">
               <span class="logo__text">Lemko K.</span>
             </div>
           </div>
+          <div class="header__overlay"></div>
+          <button class="header__burger burger" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <span class="burger__line"></span>
+          </button>
           <nav class="header__item header__menu menu">
             <ul class="menu__list">
               <li class="menu__item">
@@ -123,7 +128,7 @@
               <pre>
                 <code class="JavaScript">
 function solution(num) {
-  let lookup = {M:1000,CM:900,D:500,CD:400,C:100,XC:90,L:50,XL:40,X:10,IX:9,V:5,IV:4,I:1},
+  let lookup = {M:1000, CM:900, D:500, CD:400, C:100, XC:90, L:50, XL:40, X:10, IX:9, V:5, IV:4, I:1},
     result = '';
   for (let i in lookup ) {
     while ( num &gt;= lookup[i] ) {
@@ -148,54 +153,92 @@ function solution(num) {
                 <article class="projects-grid__item project">
                   <div class="project__inner">
                     <div class="project__img-wrapper">
-                      <img class="project__img" src="img/lstk.png" alt="">
+                      <a class="project__img-link" href="https://lstkpromstroy.ru" target="_blank" title="LSKTPromStroy">
+                        <img class="project__img" src="img/lstk.png" alt="">
+                      </a>
                     </div>
                     <div class="project__hidden-part">
                       <div class="project__body">
-                        <h3><a class="project__title" href="https://lstkpromstroy.ru" target="_blank" title="LSKTPromStroy">LSKTPromStroy</a></h3>
                         <p class="project__description">Website for the construction company on Wordpress</p>
+                        <h4 class="project__technology-title">Technologies used:</h4>
+                        <ul>
+                          <li>HTML</li>
+                          <li>CSS (SCSS)</li>
+                          <li>JS</li>
+                          <li>PHP</li>
+                          <li>Wordpress</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
+                  <h3><a class="project__title" href="https://lstkpromstroy.ru" target="_blank" title="LSKTPromStroy">LSKTPromStroy</a></h3>
                 </article>
                 <article class="projects-grid__item project">
                   <div class="project__inner">
                     <div class="project__img-wrapper">
-                      <img class="project__img" src="img/classikdent.png" alt="">
+                      <a class="project__img-link" href="https://classikdent.ru" target="_blank" title="ClassikDent">
+                        <img class="project__img" src="img/classikdent.png" alt="">
+                      </a>
                     </div>
                     <div class="project__hidden-part">
                       <div class="project__body">
-                        <h3><a class="project__title" href="https://classikdent.ru" target="_blank" title="ClassikDent">ClassikDent</a></h3>
                         <p class="project__description">Dentistry website on Wordpress</p>
+                        <h4 class="project__technology-title">Technologies used:</h4>
+                        <ul>
+                          <li>HTML</li>
+                          <li>CSS (SCSS)</li>
+                          <li>JS</li>
+                          <li>PHP</li>
+                          <li>Wordpress</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
+                  <h3><a class="project__title" href="https://classikdent.ru" target="_blank" title="ClassikDent">ClassikDent</a></h3>
                 </article>
                 <article class="projects-grid__item project">
                   <div class="project__inner">
                     <div class="project__img-wrapper">
-                      <img class="project__img" src="img/cki.png" alt="">
+                      <a class="project__img-link" href="http://polzunova.vtkteam.ru" target="_blank" title="CKI">
+                        <img class="project__img" src="img/cki.png" alt="">
+                      </a>
                     </div>
                     <div class="project__hidden-part">
                       <div class="project__body">
-                        <h3><a class="project__title" href="http://polzunova.vtkteam.ru/" target="_blank" title="CKI">CKI</a></h3>
                         <p class="project__description">Site for a cultural center on Wordpress</p>
+                        <h4 class="project__technology-title">Technologies used:</h4>
+                        <ul>
+                          <li>HTML</li>
+                          <li>CSS (SCSS)</li>
+                          <li>JS</li>
+                          <li>PHP</li>
+                          <li>Wordpress</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
+                  <h3><a class="project__title" href="http://polzunova.vtkteam.ru/" target="_blank" title="CKI">CKI</a></h3>
                 </article>
                 <article class="projects-grid__item project">
                   <div class="project__inner">
                     <div class="project__img-wrapper">
-                      <img class="project__img" src="img/avtk.png" alt="">
+                      <a class="project__img-link" href="http://tensib.beget.tech/avtk/" target="_blank" title="AVTK">
+                        <img class="project__img" src="img/avtk.png" alt="">
+                      </a>
                     </div>
                     <div class="project__hidden-part">
                       <div class="project__body">
-                        <h3><a class="project__title" href="http://tensib.beget.tech/avtk/" target="_blank" title="AVTK">AVTK</a></h3>
                         <p class="project__description">Online Store Layout</p>
+                        <h4 class="project__technology-title">Technologies used:</h4>
+                        <ul>
+                          <li>HTML</li>
+                          <li>CSS (SCSS)</li>
+                          <li>JS</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
+                  <h3><a class="project__title" href="http://tensib.beget.tech/avtk/" target="_blank" title="AVTK">AVTK</a></h3>
                 </article>
               </div>
             </div>
@@ -263,5 +306,6 @@ function solution(num) {
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <script src="js/script.js"></script>
 </body>
 </html>
